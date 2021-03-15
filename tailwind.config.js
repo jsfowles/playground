@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors');
+const colors = require('./styles/colors');
 
 module.exports = {
   purge: [],
@@ -15,38 +15,15 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      white: { DEFAULT: '#FFFFFF', dark: '#F9FBFC' },
-      blue: {
-        light: '#779CAB',
-        DEFAULT: '#08BBD7',
-      },
-      gray: {
-        DEFAULT: '#627C85',
-      },
-      black: {
-        DEFAULT: '#1D2527',
-      },
-      green: {
-        DEFAULT: '#A2E8DD',
-      },
-      orange: {
-        DEFAULT: '#FF8867',
-      },
-      red: {
-        DEFAULT: '#F9495C',
-      },
-      pink: {
-        DEFAULT: '#DE3285',
-      },
-      grayTones: {
-        50: '#F3F7FA',
-        100: '#E2EAF2',
-        200: '#BBC5CF',
-        300: '#9AA5AF',
-        400: '#78838E',
-        500: '#67707A',
-        600: '#465058',
-      },
+      white: colors.white,
+      black: colors.black,
+      gray: colors.gray,
+      blue: colors.blue,
+      green: colors.green,
+      orange: colors.orange,
+      red: colors.red,
+      pink: colors.pink,
+      grayTones: colors.grayTones,
     },
     spacing: {
       px: '1px',
@@ -84,6 +61,7 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
+      50: '50vh',
     },
     animation: {
       none: 'none',
@@ -193,6 +171,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Karla',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -209,18 +188,19 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: [
-        'ui-serif',
-        'Georgia',
-        'Cambria',
+        'Spectral',
         '"Times New Roman"',
+        'Georgia',
+        'ui-serif',
+        'Cambria',
         'Times',
         'serif',
       ],
       mono: [
+        'Monaco',
         'ui-monospace',
         'SFMono-Regular',
         'Menlo',
-        'Monaco',
         'Consolas',
         '"Liberation Mono"',
         '"Courier New"',
@@ -614,6 +594,7 @@ module.exports = {
       110: '1.1',
       125: '1.25',
       150: '1.5',
+      '-1': '-1',
     },
     skew: {
       '-12': '-12deg',
@@ -937,9 +918,5 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [],
 };

@@ -1,10 +1,17 @@
-import Hero from '@components/Hero';
-import Services from '@components/Services';
+import React from 'react';
+import Fade from '@components/Fade';
+import Reveal from '@components/Reveal';
 
-const Home = () => (
-  <div className="gradient pt-16 md:pt-20">
-    <Hero />
-    <Services />
-  </div>
-);
+const Home = () => {
+  return (
+    <div className="h-screen flex items-center justify-center">
+      <Reveal>
+        <Fade>
+          <p className="text-9xl font-serif">hello world</p>
+        </Fade>
+      </Reveal>
+    </div>
+  );
+};
+
 export default Home;

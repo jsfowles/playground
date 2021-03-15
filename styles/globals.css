@@ -14,11 +14,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-.reverse-gradient {
-  background: linear-gradient(135.57deg, #F9495C 0%, #08BBD7 100.08%);
-}
-
-.gradient {
-  background: linear-gradient(135.57deg, #08BBD7 0%, #F9495C 100.08%);
-}
