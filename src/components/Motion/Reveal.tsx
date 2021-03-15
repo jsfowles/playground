@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { IntersectionOptions } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import { MotionParentContext } from '@components/MotionParent';
+import { MotionParentContext } from '@components/Motion/MotionParent';
 import useReveal from '@hooks/useReveal';
-import { MotionDirection, Transition } from '../types/motion';
+import { MotionDirection, Transition } from '@typings/motion';
 
 interface Props {
   children: React.ReactNode;
