@@ -37,7 +37,32 @@ const Home = () => {
         </Fade>
         <Fade>
           <Reveal direction="right">
-            <p className="py-4 font-mono">by jsfowles && underbelly</p>
+            <p className="py-4 font-mono">
+              by{' '}
+              <a
+                className="hover:text-blue duration-200 transition-all"
+                target="__blank"
+                href="https://github.com/jessieleigh30"
+              >
+                jessieleigh30
+              </a>{' '}
+              &&{' '}
+              <a
+                className="hover:text-blue duration-200 transition-all"
+                target="__blank"
+                href="https://github.com/jsfowles"
+              >
+                jsfowles
+              </a>{' '}
+              &&{' '}
+              <a
+                className="hover:text-blue duration-200 transition-all"
+                target="__blank"
+                href="https://github.com/simplycomplexable"
+              >
+                simplycomplexable
+              </a>
+            </p>
           </Reveal>
         </Fade>
         <Fade>
