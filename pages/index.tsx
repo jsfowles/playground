@@ -20,10 +20,18 @@ const Home = () => {
         <Fade>
           <Reveal direction="right">
             <h3 className="text-7xl pt-4 font-serif">
-              <ReactRotatingText
-                items={['tailwind', 'react', 'typescript', 'motion', 'next.js']}
-              />{' '}
-              template
+              <span className="text-blue">
+                <ReactRotatingText
+                  items={[
+                    'tailwind',
+                    'react',
+                    'typescript',
+                    'motion',
+                    'next.js',
+                  ]}
+                />{' '}
+              </span>
+              template.
             </h3>
           </Reveal>
         </Fade>
