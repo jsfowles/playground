@@ -40,7 +40,7 @@ const Home = () => {
             <p className="py-4 font-mono">
               by{' '}
               <a
-                className="hover:text-blue duration-200 transition-all"
+                className="text-blue hover:text-pink duration-200 transition-all"
                 target="__blank"
                 href="https://github.com/jessieleigh30"
               >
@@ -48,7 +48,7 @@ const Home = () => {
               </a>{' '}
               &&{' '}
               <a
-                className="hover:text-blue duration-200 transition-all"
+                className="text-blue hover:text-pink duration-200 transition-all"
                 target="__blank"
                 href="https://github.com/jsfowles"
               >
@@ -56,7 +56,7 @@ const Home = () => {
               </a>{' '}
               &&{' '}
               <a
-                className="hover:text-blue duration-200 transition-all"
+                className="text-blue hover:text-pink duration-200 transition-all"
                 target="__blank"
                 href="https://github.com/simplycomplexable"
               >
