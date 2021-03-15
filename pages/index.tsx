@@ -2,7 +2,7 @@ import React from 'react';
 import Fade from '@components/Motion/Fade';
 import Reveal from '@components/Motion/Reveal';
 import MotionParent from '@components/Motion/MotionParent';
-
+import ReactRotatingText from 'react-rotating-text';
 const Home = () => {
   return (
     <div className="h-screen flex items-center justify-center flex-col">
@@ -19,7 +19,12 @@ const Home = () => {
         </Fade>
         <Fade>
           <Reveal direction="right">
-            <h3 className="text-7xl pt-4 font-serif">tailwind template</h3>
+            <h3 className="text-7xl pt-4 font-serif">
+              <ReactRotatingText
+                items={['tailwind', 'react', 'typescript', 'motion', 'next.js']}
+              />{' '}
+              template
+            </h3>
           </Reveal>
         </Fade>
         <Fade>
