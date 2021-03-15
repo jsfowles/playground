@@ -7,18 +7,36 @@ const Home = () => {
   return (
     <div className="h-screen flex items-center justify-center flex-col">
       <MotionParent>
-        <Reveal>
-          <h1 className="text-9xl font-serif">hello world.</h1>
-        </Reveal>
-        <Reveal>
-          <h2 className="text-8xl font-serif">this is a</h2>
-        </Reveal>
-        <Reveal>
-          <h3 className="text-7xl pt-4 font-serif">tailwind template</h3>
-        </Reveal>
-        <Reveal>
-          <p className="pt-4 font-mono">by jsfowles && underbelly</p>
-        </Reveal>
+        <Fade>
+          <Reveal direction="right">
+            <h1 className="text-9xl font-serif">hello world.</h1>
+          </Reveal>
+        </Fade>
+        <Fade>
+          <Reveal direction="right">
+            <h2 className="text-8xl font-serif">this is a</h2>
+          </Reveal>
+        </Fade>
+        <Fade>
+          <Reveal direction="right">
+            <h3 className="text-7xl pt-4 font-serif">tailwind template</h3>
+          </Reveal>
+        </Fade>
+        <Fade>
+          <Reveal direction="right">
+            <p className="py-4 font-mono">by jsfowles && underbelly</p>
+          </Reveal>
+        </Fade>
+        <Fade>
+          <Reveal direction="right">
+            <a
+              className="font-mono hover:text-blue duration-200 transition-all"
+              href="https://github.com/jsfowles/tw-template"
+            >
+              github: https://github.com/jsfowles/tw-template
+            </a>
+          </Reveal>
+        </Fade>
       </MotionParent>
     </div>
   );

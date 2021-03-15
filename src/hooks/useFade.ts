@@ -19,10 +19,14 @@ export const useFade = (
     const variants = {
       hidden: {
         opacity: 0,
+        y: 20,
+        x: 20,
         transition: { duration: 0.7, ...(transitionOut || transition) },
       },
       visible: {
         opacity: 1,
+        y: 0,
+        x: 0,
         transition: { duration: 0.7, ...transition },
       },
     };
