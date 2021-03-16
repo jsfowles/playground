@@ -2,8 +2,11 @@ import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
 import Head from 'next/head';
 import Layout from '@components/Layout';
+import { ThemeProvider } from 'next-themes';
 
 function MyApp({ Component, pageProps }) {
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+
   return (
     <>
       <Head>
@@ -14,7 +17,9 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Layout>
-        <Component {...pageProps} />
+        <ThemeProvider attribute="class">
+          <Component {...pageProps} />
+        </ThemeProvider>
       </Layout>
     </>
   );

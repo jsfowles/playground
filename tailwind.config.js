@@ -3,7 +3,7 @@ const colors = require('./styles/colors');
 module.exports = {
   purge: [],
   presets: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     screens: {
       sm: '640px',
@@ -12,18 +12,20 @@ module.exports = {
       xl: '1280px',
       '2xl': '1536px',
     },
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      white: colors.white,
-      black: colors.black,
-      gray: colors.gray,
-      blue: colors.blue,
-      green: colors.green,
-      orange: colors.orange,
-      red: colors.red,
-      pink: colors.pink,
-      grayTones: colors.grayTones,
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        white: colors.white,
+        black: colors.black,
+        gray: colors.gray,
+        blue: colors.blue,
+        green: colors.green,
+        orange: colors.orange,
+        red: colors.red,
+        pink: colors.pink,
+        grayTones: colors.grayTones,
+      },
     },
     spacing: {
       px: '1px',
