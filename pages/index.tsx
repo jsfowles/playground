@@ -10,11 +10,11 @@ const Home = () => {
   const [mounted, setMounted] = React.useState(false);
   React.useEffect(() => setMounted(true), []);
   return (
-    <div className="dark:bg-black dark:text-white h-screen flex items-center justify-center flex-col transition">
+    <div className="dark:bg-black dark:text-white h-screen flex items-center pt-32 md:pt-0 md:justify-center md:pb-0 flex-col transition px-2 md:px-0">
       <button
         aria-label="Toggle Dark Mode"
         type="button"
-        className="absolute top-10 right-10 p-4 bg-black dark:bg-pink rounded-full transition"
+        className="absolute top-2 md:top-10 right-2 md:right-10 p-4 bg-black dark:bg-pink rounded-full transition"
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
         {mounted && (
@@ -23,7 +23,7 @@ const Home = () => {
             viewBox="0 0 24 24"
             fill="currentColor"
             stroke="currentColor"
-            className="h-6 w-6 text-white"
+            className="h-4 w-4 md:h-6 md:w-6 text-white"
           >
             {theme === 'dark' ? (
               <path
