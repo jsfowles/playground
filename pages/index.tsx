@@ -46,19 +46,19 @@ const Home = () => {
       <MotionParent>
         <Fade>
           <Reveal direction="right">
-            <h1 className="dark:text-white text-9xl font-serif">
+            <h1 className="dark:text-white text-5xl md:text-9xl font-serif">
               hello world.
             </h1>
           </Reveal>
         </Fade>
         <Fade>
           <Reveal direction="right">
-            <h2 className="text-8xl font-serif">this is a</h2>
+            <h2 className="text-4xl md:text-8xl font-serif">this is a</h2>
           </Reveal>
         </Fade>
         <Fade>
           <Reveal direction="right">
-            <h3 className="text-7xl pt-4 font-serif">
+            <h3 className="text-3xl md:text-7xl md:pt-4 font-serif">
               <span className="text-blue">
                 <ReactRotatingText
                   items={[
@@ -76,7 +76,7 @@ const Home = () => {
         </Fade>
         <Fade>
           <Reveal direction="right">
-            <p className="py-4 font-mono">
+            <p className="py-4 text-xs font-mono">
               by{' '}
               <a
                 className="text-blue dark:text-pink hover:text-pink duration-200 transition-all"
@@ -106,10 +106,11 @@ const Home = () => {
         </Fade>
         <Fade>
           <a
-            className="font-mono hover:text-blue duration-200 transition-all"
+            target="__blank"
+            className="font-mono text-xs hover:text-blue duration-200 transition-all"
             href="https://github.com/jsfowles/tw-template"
           >
-            github: https://github.com/jsfowles/tw-template
+            github
           </a>
         </Fade>
       </MotionParent>
