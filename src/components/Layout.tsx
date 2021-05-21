@@ -1,7 +1,13 @@
 import React from 'react';
+import Navigation from '@components/Navigation';
 
 const Layout = ({ children }) => {
-  return <>{children}</>;
+  return (
+    <>
+      <Navigation />
+      {children}
+    </>
+  );
 };
 
 export default Layout;

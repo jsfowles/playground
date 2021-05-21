@@ -14,7 +14,7 @@ const Home = () => {
       <button
         aria-label="Toggle Dark Mode"
         type="button"
-        className="absolute top-2 md:top-10 right-2 md:right-10 p-4 bg-black dark:bg-pink rounded-full transition"
+        className="absolute top-2 md:top-10 right-2 md:right-10 p-4 bg-black dark:bg-hotpink rounded-full transition"
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
         {mounted && (
@@ -43,10 +43,10 @@ const Home = () => {
           </svg>
         )}
       </button>
-      <MotionParent>
+      <div className="text-center md:text-left">
         <Fade>
           <Reveal direction="right">
-            <h1 className="dark:text-white text-5xl md:text-9xl font-serif">
+            <h1 className="dark:text-white text-5xl md:text-9xl font-outline">
               hello world.
             </h1>
           </Reveal>
@@ -58,8 +58,8 @@ const Home = () => {
         </Fade>
         <Fade>
           <Reveal direction="right">
-            <h3 className="text-3xl md:text-7xl md:pt-4 font-serif">
-              <span className="text-blue">
+            <h3 className="text-3xl md:text-6xl md:pt-4 font-body">
+              <span className="text-cyan-400">
                 <ReactRotatingText
                   items={[
                     'tailwind',
@@ -79,7 +79,7 @@ const Home = () => {
             <p className="py-4 text-xs font-mono">
               by{' '}
               <a
-                className="text-blue dark:text-pink hover:text-pink duration-200 transition-all"
+                className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all"
                 target="__blank"
                 href="https://github.com/jessieleigh30"
               >
@@ -87,7 +87,7 @@ const Home = () => {
               </a>{' '}
               &&{' '}
               <a
-                className="text-blue dark:text-pink hover:text-pink duration-200 transition-all"
+                className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all"
                 target="__blank"
                 href="https://github.com/jsfowles"
               >
@@ -95,7 +95,7 @@ const Home = () => {
               </a>{' '}
               &&{' '}
               <a
-                className="text-blue dark:text-pink hover:text-pink duration-200 transition-all"
+                className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all"
                 target="__blank"
                 href="https://github.com/simplycomplexable"
               >
@@ -107,13 +107,13 @@ const Home = () => {
         <Fade>
           <a
             target="__blank"
-            className="font-mono text-xs hover:text-blue duration-200 transition-all"
+            className="font-mono text-xs hover:text-cyan-400 duration-200 transition-all"
             href="https://github.com/jsfowles/tw-template"
           >
             github
           </a>
         </Fade>
-      </MotionParent>
+      </div>
     </div>
   );
 };
