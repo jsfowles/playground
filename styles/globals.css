@@ -79,3 +79,30 @@ a {
   transform: translate(-50%, -50%) scale(0.9);
   background-color: hotpink;
 }
+
+p.button-one {
+    transition: all 500ms ease;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300%;
+    background-position: left;
+}
+
+.animate {
+  @apply transition duration-500 ease-in-out
+}
+
+
+
+.button-three:before {
+  content: "";
+@apply z-0 bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 w-full h-full absolute top-1 left-1 rounded-[3.125em] filter blur-[5em]
+}
+
+.button-three:after {
+  content: "";
+  z-index: -1;
+
+@apply bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 w-full h-full absolute top-1 right-1 rounded-[3.125em] filter blur-[14px]
+}

@@ -631,6 +631,7 @@ module.exports = {
       '3/6': '50%',
       '4/6': '66.666667%',
       '5/6': '83.333333%',
+      max: 'max-content',
       full: '100%',
       screen: '100vh',
     }),
@@ -719,6 +720,7 @@ module.exports = {
       ...theme('spacing'),
       full: '100%',
       screen: '100vh',
+      max: 'max-content',
     }),
     maxWidth: (theme, { breakpoints }) => ({
       none: 'none',
@@ -923,7 +925,7 @@ module.exports = {
       none: 'none',
       all: 'all',
       DEFAULT:
-        'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, width, height, font-family',
+        'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, width, height, font-family, border-width',
       colors: 'background-color, border-color, color, fill, stroke',
       opacity: 'opacity',
       shadow: 'box-shadow',
