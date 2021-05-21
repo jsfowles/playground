@@ -8,8 +8,8 @@ const data = [
     title: 'Navs',
     route: '/navs',
     links: [
-      { id: 0, title: 'nav one', desktopRoute: '/navs/one/desktop' },
-      { id: 1, title: 'nav two', desktopRoute: '/navs/two/desktop' },
+      { id: 0, title: 'one', desktopRoute: '/navs/one' },
+      { id: 1, title: 'two', desktopRoute: '/navs/two' },
     ],
   },
   {
@@ -17,8 +17,8 @@ const data = [
     title: 'Buttons',
     route: '/buttons',
     links: [
-      { id: 0, title: 'button one', desktopRoute: '/navs/one/desktop' },
-      { id: 1, title: 'button two', desktopRoute: '/navs/one/desktop' },
+      { id: 0, title: 'one', desktopRoute: '/navs/one' },
+      { id: 1, title: 'two', desktopRoute: '/navs/one' },
     ],
   },
 ];
