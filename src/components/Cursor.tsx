@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback, useEffect, useState } from 'react';
 import classnames from 'classnames';
 const isMobile = () => {
@@ -54,7 +55,6 @@ const Cursor = () => {
       if (hoverContainer) {
         const hoverImage = hoverContainer.querySelector('[data-hover-img]');
         hoverImage.style.display = 'initial';
-        console.log(left, top, e.clientX - left, e.clientY - top);
         hoverImage.style.left = `${e.clientX - left}px`;
         hoverImage.style.top = `${e.clientY - top}px`;
       }
