@@ -23,7 +23,7 @@ const Buttons = () => {
   const [onHoverZero, setOnHoverZero] = React.useState(false);
 
   return (
-    <div className="w-2/5 mx-auto grid gap-16 grid-cols-3 justify-items-center pt-[20vh]">
+    <div className="w-2/5 mx-auto grid gap-y-32 grid-cols-3 justify-items-center pt-[20vh]">
       {/*button one*/}
       <div className=" max-w-max h-max text-center">
         <button className="group  relative bg-transparent h-16 px-16 flex items-center justify-center to-pink-500">

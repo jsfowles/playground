@@ -114,7 +114,7 @@ const Navigation = () => {
                     exit={{ opacity: 0 }}
                   >
                     {links?.map(({ id, title, desktopRoute }) => (
-                      <Link href={desktopRoute} passHref>
+                      <Link href={desktopRoute} passHref key={id}>
                         <a className="font-serif text-xl tracking-wider hover:pl-2 hover:text-cyan-500 dark:hover:text-cyan-500 transition transition-all dark:text-white">
                           {title}
                         </a>
