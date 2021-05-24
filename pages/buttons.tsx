@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import withTransition from '@lib/withTransition';
 
 const container = {
   hidden: {},
@@ -35,9 +36,12 @@ const Buttons = () => {
         </button>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
           <h4 className="text-7xl text-gray-600 font-outline">1.</h4>
-          <div className="w-1/2">
-            <p className="text-sm text-cyan-400 mb-2">USES:</p>
-            <p>Tailwind, css</p>
+          <div className="text-left pl-8">
+            <p className="text-sm text-cyan-400 mb-2">tech:</p>
+            <ul className="list-disc ">
+              <li>Tailwind</li>
+              <li>CSS</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -55,9 +59,11 @@ const Buttons = () => {
         </div>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
           <h4 className="text-7xl text-gray-600 font-outline">2.</h4>
-          <div className="">
-            <p className="text-sm text-cyan-400 mb-2">USES:</p>
-            <p>Tailwind</p>
+          <div className="text-left pl-8">
+            <p className="text-sm text-cyan-400 mb-2">tech:</p>
+            <ul className="list-disc">
+              <li>Tailwind</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -71,9 +77,12 @@ const Buttons = () => {
         </div>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
           <h4 className="text-7xl text-gray-600 font-outline">3.</h4>
-          <div className="">
-            <p className="text-sm text-cyan-400 mb-2">USES:</p>
-            <p>Tailwind, css</p>
+          <div className="text-left pl-8">
+            <p className="text-sm text-cyan-400 mb-2">tech:</p>
+            <ul className="list-disc">
+              <li>Tailwind</li>
+              <li>css</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -86,7 +95,8 @@ const Buttons = () => {
           onMouseLeave={() => setOnHoverZero(false)}
           animate={{ borderRadius: onHoverZero ? '5px' : '50px' }}
           transition={{ duration: 0.4 }}
-          className="h-16 w-48 rounded-full bg-gradient-to-br from-teal-300 to-pink-400 overflow-hidden flex justify-center items-center flex-col"
+          className="h-16 w-48 rounded-full bg-gradient-to-tr from-pink-500  to-purple-400
+ overflow-hidden flex justify-center items-center flex-col"
         >
           <motion.span
             variants={container}
@@ -173,9 +183,13 @@ const Buttons = () => {
         </motion.button>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center ">
           <h4 className="text-7xl text-gray-600 font-outline">4.</h4>
-          <div className="w-1/2">
-            <p className="text-sm text-cyan-400 mb-2 mb-4">USES:</p>
-            <p>Tailwind, Framer Motion, Javascript</p>
+          <div className="text-left pl-8">
+            <p className="text-sm text-cyan-400 mb-2">tech:</p>
+            <ul className="list-disc ">
+              <li>Tailwind</li>
+              <li>Framer Motion</li>
+              <li>Javascript</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -208,9 +222,11 @@ const Buttons = () => {
         </button>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center filter group-hover:drop-shadow-reg animate">
           <h4 className="text-7xl text-gray-600 font-outline">5.</h4>
-          <div className="">
-            <p className="text-sm text-cyan-400 mb-2">USES:</p>
-            <p>Tailwind</p>
+          <div className="text-left pl-8">
+            <p className="text-sm text-cyan-400 mb-2">tech:</p>
+            <ul className="list-disc ">
+              <li>Tailwind</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -223,9 +239,13 @@ const Buttons = () => {
         </button>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
           <h4 className="text-7xl text-gray-600 font-outline">6.</h4>
-          <div className="w-1/2">
-            <p className="text-sm text-cyan-400 mb-2">USES:</p>
-            <p>Tailwind, Css, Javascript</p>
+          <div className="text-left pl-8">
+            <p className="text-sm text-cyan-400 mb-2">tech:</p>
+            <ul className="list-disc ">
+              <li>Tailwind</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -233,4 +253,4 @@ const Buttons = () => {
   );
 };
 
-export default Buttons;
+export default withTransition(Buttons);

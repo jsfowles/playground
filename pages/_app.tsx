@@ -4,10 +4,12 @@ import Head from 'next/head';
 import Layout from '@components/Layout';
 import { ThemeProvider } from 'next-themes';
 import Cursor from '@components/Cursor';
+import { useRouter } from 'next/router';
+import { AnimatePresence } from 'framer-motion';
 
 function MyApp({ Component, pageProps }) {
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -23,7 +25,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Layout>
         <ThemeProvider attribute="class">
-          <Component {...pageProps} />
+          <AnimatePresence exitBeforeEnter>
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
           {/*<Cursor />*/}
         </ThemeProvider>
       </Layout>

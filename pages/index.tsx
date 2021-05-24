@@ -4,6 +4,7 @@ import Reveal from '@components/Motion/Reveal';
 import MotionParent from '@components/Motion/MotionParent';
 import ReactRotatingText from 'react-rotating-text';
 import { useTheme } from 'next-themes';
+import withTransition from '@lib/withTransition';
 
 const Home = () => {
   const { theme, setTheme } = useTheme();
@@ -118,4 +119,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withTransition(Home);

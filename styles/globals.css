@@ -139,3 +139,24 @@ button {
     box-shadow: 0 5px 0 #750014;
     border-radius: 4px
 }
+
+.slide-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #066bb8;
+    transform-origin: left;
+}
+
+.slide-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: #066bb8;
+    transform-origin: right;
+    @apply fixed top-0 left-0
+}

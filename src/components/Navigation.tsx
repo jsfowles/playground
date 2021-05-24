@@ -7,10 +7,10 @@ const data = [
     id: 0,
     title: 'Navs',
     route: '/navs',
-    links: [
-      { id: 0, title: 'one', desktopRoute: '/navs/one' },
-      { id: 1, title: 'two', desktopRoute: '/navs/two' },
-    ],
+    // links: [
+    //   { id: 0, title: 'one', desktopRoute: '/navs/one' },
+    //   { id: 1, title: 'two', desktopRoute: '/navs/two' },
+    // ],
   },
   {
     id: 0,
@@ -85,47 +85,47 @@ const Navigation = () => {
         )}
       </AnimatePresence>
 
-      {data.map(
-        ({ id, links }, index) =>
-          links && (
-            <>
-              {onSubHover === index && (
-                <div
-                  className="flex  h-16 "
-                  onMouseEnter={() => setOnSubHover(index)}
-                  onMouseLeave={() => setOnSubHover(null)}
-                >
-                  <motion.svg
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    width={40}
-                    height="100%"
-                    viewBox="0 0 40 210"
-                    className="fill-current text-hotpink"
-                  >
-                    <path d="M.4 103.5c.8-1.7 2.6-3.1 4.7-3 21.2-11.9 14.6-38.4 11.2-58.8-1.8-10.9-3.5-23.2 2.4-33.2 2.2-3.7 6.1-6.3 10.1-7.4C33 0 36 1.6 39.2 3.8c.7.5.3 1.7-.6 1.4-4.1-1.3-8.9 2-11.5 4.8-3.6 3.8-3.6 10.3-3.5 15.2.3 11.9 4.2 23.6 5.7 35.4 1.4 10.9 1.1 21.7-3.4 31.8-2.1 4.8-5.7 9.5-10.1 12.9 4.4 3.4 7.9 8.1 10.1 12.9 4.5 10.2 4.8 20.9 3.4 31.8-1.5 11.8-5.4 23.5-5.7 35.4-.1 4.9-.1 11.4 3.5 15.2 2.6 2.8 7.5 6.1 11.5 4.8.9-.3 1.3.9.6 1.4-3.2 2.2-6.2 3.9-10.4 2.7-4-1.1-8-3.7-10.1-7.4-5.9-10-4.2-22.2-2.4-33.2 3.4-20.4 10-46.9-11.2-58.8-2.1.1-3.9-1.3-4.7-3-.3-.6-.4-1.2-.4-1.8 0-.6.1-1.2.4-1.8z" />
-                  </motion.svg>
-                  <motion.div
-                    className="flex flex-col justify-center"
-                    key={id}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                  >
-                    {links?.map(({ id, title, desktopRoute }) => (
-                      <Link href={desktopRoute} passHref key={id}>
-                        <a className="font-serif text-xl tracking-wider hover:pl-2 hover:text-cyan-500 dark:hover:text-cyan-500 transition transition-all dark:text-white">
-                          {title}
-                        </a>
-                      </Link>
-                    ))}
-                  </motion.div>
-                </div>
-              )}
-            </>
-          )
-      )}
+      {/*{data.map(*/}
+      {/*  ({ id, links }, index) =>*/}
+      {/*    links && (*/}
+      {/*      <>*/}
+      {/*        {onSubHover === index && (*/}
+      {/*          <div*/}
+      {/*            className="flex  h-16 "*/}
+      {/*            onMouseEnter={() => setOnSubHover(index)}*/}
+      {/*            onMouseLeave={() => setOnSubHover(null)}*/}
+      {/*          >*/}
+      {/*            <motion.svg*/}
+      {/*              initial={{ opacity: 0 }}*/}
+      {/*              animate={{ opacity: 1 }}*/}
+      {/*              exit={{ opacity: 0 }}*/}
+      {/*              width={40}*/}
+      {/*              height="100%"*/}
+      {/*              viewBox="0 0 40 210"*/}
+      {/*              className="fill-current text-hotpink"*/}
+      {/*            >*/}
+      {/*              <path d="M.4 103.5c.8-1.7 2.6-3.1 4.7-3 21.2-11.9 14.6-38.4 11.2-58.8-1.8-10.9-3.5-23.2 2.4-33.2 2.2-3.7 6.1-6.3 10.1-7.4C33 0 36 1.6 39.2 3.8c.7.5.3 1.7-.6 1.4-4.1-1.3-8.9 2-11.5 4.8-3.6 3.8-3.6 10.3-3.5 15.2.3 11.9 4.2 23.6 5.7 35.4 1.4 10.9 1.1 21.7-3.4 31.8-2.1 4.8-5.7 9.5-10.1 12.9 4.4 3.4 7.9 8.1 10.1 12.9 4.5 10.2 4.8 20.9 3.4 31.8-1.5 11.8-5.4 23.5-5.7 35.4-.1 4.9-.1 11.4 3.5 15.2 2.6 2.8 7.5 6.1 11.5 4.8.9-.3 1.3.9.6 1.4-3.2 2.2-6.2 3.9-10.4 2.7-4-1.1-8-3.7-10.1-7.4-5.9-10-4.2-22.2-2.4-33.2 3.4-20.4 10-46.9-11.2-58.8-2.1.1-3.9-1.3-4.7-3-.3-.6-.4-1.2-.4-1.8 0-.6.1-1.2.4-1.8z" />*/}
+      {/*            </motion.svg>*/}
+      {/*            <motion.div*/}
+      {/*              className="flex flex-col justify-center"*/}
+      {/*              key={id}*/}
+      {/*              initial={{ opacity: 0 }}*/}
+      {/*              animate={{ opacity: 1 }}*/}
+      {/*              exit={{ opacity: 0 }}*/}
+      {/*            >*/}
+      {/*              {links?.map(({ id, title, desktopRoute }) => (*/}
+      {/*                <Link href={desktopRoute} passHref key={id}>*/}
+      {/*                  <a className="font-serif text-xl tracking-wider hover:pl-2 hover:text-cyan-500 dark:hover:text-cyan-500 transition transition-all dark:text-white">*/}
+      {/*                    {title}*/}
+      {/*                  </a>*/}
+      {/*                </Link>*/}
+      {/*              ))}*/}
+      {/*            </motion.div>*/}
+      {/*          </div>*/}
+      {/*        )}*/}
+      {/*      </>*/}
+      {/*    )*/}
+      {/*)}*/}
     </div>
   );
 };
