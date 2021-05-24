@@ -4,18 +4,19 @@ import { AnimatePresence, motion } from 'framer-motion';
 const data = [
   { id: 0, title: 'Home', route: '/' },
   {
-    id: 0,
+    id: 1,
     title: 'Navs',
     route: '/navs',
-    // links: [
-    //   { id: 0, title: 'one', desktopRoute: '/navs/one' },
-    //   { id: 1, title: 'two', desktopRoute: '/navs/two' },
-    // ],
   },
   {
-    id: 0,
+    id: 2,
     title: 'Buttons',
     route: '/buttons',
+  },
+  {
+    id: 3,
+    title: 'Components',
+    route: '/components',
   },
 ];
 
