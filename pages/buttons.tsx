@@ -199,10 +199,10 @@ const Buttons = () => {
           className="h-16 w-48 overflow-hidden group flex justify-center items-center
           "
         >
-          <div className="bg-gray-700 hover-group:bg-black rounded-full h-14 w-14 group-hover:w-full flex justify-center items-center animate absolute left-2 group-hover:left-0">
+          <div className="bg-gray-700 hover-group:bg-black rounded-full h-16 w-16 group-hover:w-full flex justify-center items-center animate absolute left-2 group-hover:left-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 absolute left-4 group-hover:left-8 animate"
+              className="h-6 w-6 absolute left-5 group-hover:left-8 animate"
               fill="none"
               viewBox="0 0 24 24"
               stroke="white"
