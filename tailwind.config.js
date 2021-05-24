@@ -16,6 +16,9 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      dropShadow: {
+        reg: '0 5px 5px rgba(0, 0, 0, .5)',
+      },
       colors: {
         hotpink: '#DE3285',
         transparent: 'transparent',
@@ -925,7 +928,7 @@ module.exports = {
       none: 'none',
       all: 'all',
       DEFAULT:
-        'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, width, height, font-family, border-width',
+        'background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, width, height, font-family, border-width, left, drop-shadow, filter, background-image, border-radius',
       colors: 'background-color, border-color, color, fill, stroke',
       opacity: 'opacity',
       shadow: 'box-shadow',
