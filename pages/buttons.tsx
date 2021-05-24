@@ -80,7 +80,7 @@ const Buttons = () => {
       {/*button four*/}
       {/*requires framer-motion*/}
       {/*requires state*/}
-      <div className="max-w-max h-max relative text-center">
+      <div className="max-w-max h-max relative text-center flex flex-col items-center">
         <motion.button
           onMouseEnter={() => setOnHoverZero(true)}
           onMouseLeave={() => setOnHoverZero(false)}
@@ -175,7 +175,7 @@ const Buttons = () => {
           <h4 className="text-7xl text-gray-600 font-outline">4.</h4>
           <div className="w-1/2">
             <p className="text-sm text-cyan-400 mb-2 mb-4">USES:</p>
-            <p>Tailwind, Javascript</p>
+            <p>Tailwind, Framer Motion, Javascript</p>
           </div>
         </div>
       </div>
