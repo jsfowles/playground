@@ -1,6 +1,7 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
+import withTransition from '@lib/withTransition';
 
 const Navs = () => {
   const [toggleHover, setToggleHover] = React.useState(null);
@@ -130,4 +131,4 @@ const Navs = () => {
   );
 };
 
-export default Navs;
+export default withTransition(Navs);
