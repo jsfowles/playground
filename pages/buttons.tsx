@@ -29,7 +29,7 @@ const Buttons = () => {
       <div className=" max-w-max h-max text-center">
         <button className="group  relative bg-transparent h-16 px-16 flex items-center justify-center to-pink-500">
           <p className="button-one transition duration-500 ease-in-out relative z-50 font-serif text-3xl tracking-wider bg-gradient-to-l from-cyan-500 to-pink-500">
-            Button
+            Click
           </p>
           <div className="group-hover:bg-black bg-gray-700 absolute transition duration-500 ease-in-out inset-0 border-lg z-40 rounded-full mx-auto w-[100%] group-hover:w-[90%]" />
           <div className="transition duration-500 ease-in-out mx-auto transform w-[100%] bg-gradient-to-r from-cyan-500 to-pink-500 absolute inset-0 z-30 rounded-full" />
@@ -50,7 +50,7 @@ const Buttons = () => {
         <div className="relative">
           <button className="animate bg-white relative transform hover:translate-x-5 border-cyan-500 border-2 rounded-md h-16 px-16 z-50">
             <p className="tracking-wider font-serif text-3xl text-cyan-500">
-              Button
+              Click
             </p>
           </button>
           <span className="h-2/5 bg-rose-300 w-0.5 absolute left-0 top-5 z-10" />
@@ -72,7 +72,7 @@ const Buttons = () => {
       <div className=" max-w-max h-max relative text-center">
         <div className="relative">
           <button className="button-three h-16 px-16 relative animate text-2xl text-teal-600 z-50">
-            Button
+            Click
           </button>
         </div>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">

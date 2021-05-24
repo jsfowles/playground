@@ -1,6 +1,7 @@
 // @ts-nocheck
 import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
+import withTransition from '@lib/withTransition';
 
 const data = [
   {
@@ -186,4 +187,4 @@ const One = () => {
   );
 };
 
-export default One;
+export default withTransition(One);

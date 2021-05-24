@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 
 import React from 'react';
+import withTransition from '@lib/withTransition';
 
 const data = [
   {
@@ -159,4 +160,4 @@ const Two = () => {
   );
 };
 
-export default Two;
+export default withTransition(Two);

@@ -3,6 +3,7 @@ import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
+import withTransition from '@lib/withTransition';
 const data = [
   {
     id: 0,
@@ -238,4 +239,4 @@ const Two = () => {
   );
 };
 
-export default Two;
+export default withTransition(Two);
