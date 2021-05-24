@@ -65,7 +65,7 @@ const Buttons = () => {
       {/*button three*/}
       <div className=" max-w-max h-max relative text-center">
         <div className="relative">
-          <button className="button-three bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 block border-2 transition ease-in-out hover:border-4 border-white rounded-[3.125em] px-12 text-3xl font-serif tracking-widest text-white h-16">
+          <button className="button-three h-16 px-16 relative animate text-2xl text-teal-600 z-50">
             Button
           </button>
         </div>

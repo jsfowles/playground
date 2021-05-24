@@ -4,80 +4,80 @@
 
 html,
 body {
-  scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 #__next {
-  height:100vh;
+    height: 100vh;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .react-rotating-text-cursor {
-  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
-  color: #DE3285;
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+    color: #DE3285;
 }
 
 @keyframes blinking-cursor {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .parent {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 
 .cursor {
-  width: 10px;
-  height: 10px;
-  background: hotpink;
-  border-radius:100%;
+    width: 10px;
+    height: 10px;
+    background: hotpink;
+    border-radius: 100%;
 
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 500ms ease;
-  transition-property: background-color, opacity, transform, mix-blend-mode;
-  z-index: 9999;
-  mix-blend-mode: multiply;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 500ms ease;
+    transition-property: background-color, opacity, transform, mix-blend-mode;
+    z-index: 9999;
+    mix-blend-mode: multiply;
 }
 
 .cursor--hidden {
-  opacity: 0;
+    opacity: 0;
 }
 
 .cursor--link-hovered {
-  transform: translate(-50%, -50%) scale(6);
-  background: hotpink;
+    transform: translate(-50%, -50%) scale(6);
+    background: hotpink;
 }
 
 .cursor--clicked {
-  transform: translate(-50%, -50%) scale(0.9);
-  background-color: hotpink;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: hotpink;
 }
 
 p.button-one {
@@ -90,42 +90,52 @@ p.button-one {
 }
 
 .animate {
-  @apply transition-all duration-500 ease-in-out
+    @apply transition-all duration-500 ease-in-out
 }
 
 
 
-.button-three:before {
-  content: "";
-@apply z-0 bg-gradient-to-r from-pink-400 via-red-500 to-cyan-500 w-full h-full absolute top-1 left-1 rounded-[3.125em] filter blur-[5em]
+.button-three::before {
+    content: '';
+    transition: all 0.3s;
+    z-index: -1;
+    @apply w-full h-full top-0 left-0 absolute bg-teal-100
 }
 
-.button-three:after {
-  content: "";
-  z-index: -1;
-
-@apply bg-gradient-to-r from-pink-400 via-red-500 to-cyan-500 w-full h-full absolute top-1 right-1 rounded-[3.125em] filter blur-[14px]
+.button-three:hover::before {
+    @apply transform scale-75 opacity-0
 }
+
+.button-three::after {
+    content: '';
+    transition: all 0.3s;
+
+    transform: scale(1.2, 1.2);
+    @apply z-10 w-full h-full top-0 left-0 absolute opacity-0 border-2 border-teal-400
+}
+
+.button-three:hover::after {
+    @apply transform scale-100 opacity-100
+}
+
 
 button {
-  @apply tracking-wider font-serif
+    @apply tracking-wider font-serif
 }
 
 .button-six {
-  perspective: 600px;
+    perspective: 600px;
 }
-
 
 .button-six-child {
-  transform: rotateX(0deg);
-  transform-style: preserve-3d;
-  border-radius:4px;
-  transition: all 500ms ease;
+    transform: rotateX(0deg);
+    transform-style: preserve-3d;
+    border-radius: 4px;
+    transition: all 500ms ease;
 }
 
-
 .button-six-child:hover {
-  transform: rotateX(30deg);
-  box-shadow:0px 5px 0px #750014;
-  border-radius:4px
+    transform: rotateX(30deg);
+    box-shadow: 0 5px 0 #750014;
+    border-radius: 4px
 }
