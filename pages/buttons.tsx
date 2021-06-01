@@ -95,7 +95,7 @@ const Buttons = () => {
           onMouseLeave={() => setOnHoverZero(false)}
           animate={{ borderRadius: onHoverZero ? '5px' : '50px' }}
           transition={{ duration: 0.4 }}
-          className="h-16 w-48 rounded-full bg-gradient-to-tr from-pink-500  to-purple-400
+          className="h-16 w-48 rounded-full bg-gradient-to-tr from-pink-700  to-purple-700
  overflow-hidden flex justify-center items-center flex-col"
         >
           <motion.span

@@ -2,187 +2,193 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
 import withTransition from '@lib/withTransition';
+import Link from 'next/link';
 
 const data = [
   {
     id: 0,
-    title: 'work',
-    hoverImage: '/images/placeholder.png',
-    subMenu: [
-      {
-        id: 0,
-        title: 'studies',
-        description: 'Dig into a few of our most impactful projects.',
-      },
-      {
-        id: 1,
-        title: 'clients',
-        description:
-          'The clients we’ve been able to work with are gold. Hop over to see our work and take a gander at some of our best projects.',
-      },
-    ],
+    title: 'about',
   },
   {
     id: 1,
-    title: 'about',
-    subMenu: [
-      {
-        id: 0,
-        title: 'peeps',
-      },
-      {
-        id: 1,
-        title: 'life',
-      },
-      {
-        id: 2,
-        title: 'shop',
-      },
-    ],
+    title: 'contact',
   },
   {
     id: 2,
-    title: 'blog',
-    subMenu: [
-      {
-        id: 0,
-        title: 'articles',
-      },
-      {
-        id: 2,
-        title: 'announcements',
-      },
-    ],
+    title: 'careers',
   },
   {
     id: 3,
-    title: 'careers',
-    subMenu: [
-      {
-        id: 0,
-        title: 'apply',
-      },
-      {
-        id: 1,
-        title: 'perks',
-      },
-      {
-        id: 2,
-        title: 'mission',
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: 'contact',
-    subMenu: [
-      {
-        id: 0,
-        title: 'need help?',
-      },
-      {
-        id: 1,
-        title: 'location',
-      },
-      {
-        id: 2,
-        title: 'survey',
-      },
-    ],
+    title: 'pricing',
   },
 ];
 
-const variants = {
-  open: {
+const container = {
+  hidden: { opacity: 0 },
+  show: {
     opacity: 1,
-    y: 0,
-    scale: 1,
-    rotate: 0,
     transition: {
-      ease: 'easeInOut',
-      duration: 0.5,
+      staggerChildren: 0.07,
     },
   },
-  closed: { opacity: 0, rotate: 2, y: '-130%', scale: 2 },
+};
+
+const item = {
+  hidden: {
+    transition: { duration: 0.5 },
+    y: 100,
+    opacity: 0,
+  },
+  show: {
+    transition: { duration: 0.5 },
+
+    y: 0,
+    opacity: 1,
+  },
 };
 
 const One = () => {
-  const [toggleNav, setToggleNav] = React.useState(null);
+  const [toggleNav, setToggleNav] = React.useState(true);
+  const [toggleHover, setToggleHover] = React.useState(null);
 
   return (
     <>
-      <div className="h-screen">
-        <header className="bg-white">
-          <nav className="flex justify-between items-center  w-3/4 mx-auto py-12">
-            <div className="rounded-full h-20 w-20 flex bg-indigo-900 relative z-50" />
-            <div className="flex w-1/2 justify-evenly">
-              {data.map(({ id, title }, index) => (
-                <a href="/">
-                  <motion.p
-                    key={id}
-                    onMouseOver={() => setToggleNav(index)}
-                    onMouseLeave={() => setToggleNav(null)}
-                    className="relative z-50 text-lg text-indigo-900 font-serif uppercase"
-                  >
-                    {title}
-                  </motion.p>
-                </a>
-              ))}
-            </div>
-          </nav>
-        </header>
-        <AnimatePresence>
-          {data.map(
-            ({ subMenu, id, hoverImage }, index) =>
-              toggleNav === index && (
+      <header className="py-10 flex justify-end w-full responsive bg-tycho-white">
+        <nav
+          onClick={() => setToggleNav(!toggleNav)}
+          className="absolute right-0 px-10 z-50 flex justify-end"
+        >
+          <div
+            className={`h-12 w-12 relative z-50 flex justify-evenly items-end flex-col p-1 transition duration-500 ease-in-out ring-2 ring-tycho-white rounded-full ${
+              toggleNav ? 'ring-opacity-100' : 'ring-opacity-0'
+            }`}
+          >
+            <span
+              className={`block rounded-full duration-500 ease-in-out h-0.5 ${
+                toggleNav
+                  ? 'transform -rotate-45 w-full bg-tycho-white translate-y-3'
+                  : 'bg-tycho-black w-2/3'
+              }`}
+            />
+            <span
+              className={`block h-0.5 ${
+                toggleNav ? 'opacity-0' : 'opacity-100'
+              } bg-tycho-black w-full rounded-full transition duration-500 ease-in-out`}
+            />
+            <span
+              className={`block h-0.5 transform rounded-full transition duration-500 ease-in-out ${
+                toggleNav
+                  ? 'w-full bg-tycho-white rotate-45 -translate-y-2.5'
+                  : 'bg-tycho-black w-1/2'
+              }`}
+            />
+          </div>
+        </nav>
+      </header>
+      <main className="h-screen w-screen bg-tycho-white" />
+      <AnimatePresence>
+        {toggleNav && (
+          <motion.div
+            variants={container}
+            initial="hidden"
+            animate={toggleNav ? 'show' : 'hidden'}
+            exit={{ opacity: 0 }}
+          >
+            <div className="absolute inset-0 bg-tycho-black flex">
+              <div className="w-full absolute inset-0 h-1/2 items-center grid">
                 <motion.div
-                  key={id}
-                  onMouseOver={() => setToggleNav(index)}
-                  initial="closed"
-                  animate={toggleNav === index ? 'open' : 'closed'}
-                  exit="closed"
-                  variants={variants}
-                  className="bg-rose-300 max-h-full absolute top-0 right-0 left-0 z-10 w-full"
-                >
-                  <div className="w-1/2 mx-auto flex justify-evenly py-48">
-                    {subMenu.map(({ id, title, description }) => (
-                      <div data-hover-container="true">
-                        <a href="/" className="relative w-full flex flex-col">
-                          <div className="relative w-full">
-                            <motion.h2
-                              className={`text-7vw text-white font-serif px-10`}
-                              key={id}
-                            >
-                              {title}
-                            </motion.h2>
-                            <motion.h2
-                              className={`text-7vw text-white font-outline px-10 absolute z-50 inset-0`}
-                              key={id}
-                            >
-                              {title}
-                            </motion.h2>
-                          </div>
-                          <img
-                            data-hover-img="true"
-                            src={hoverImage}
-                            className="w-24 h-24 object-contain absolute top-0 left-0 hidden"
-                          />
-                        </a>
-                        <p
-                          className="text-indigo-900 font-bold text-lg font-sans p-10"
-                          key={id}
-                        >
-                          {description}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
-                </motion.div>
-              )
-          )}
-        </AnimatePresence>
-        <main className="h-full">hi</main>
-      </div>
+                  initial={{ y: 500, scale: 0.25 }}
+                  animate={{
+                    y: 1,
+                    scale: 1,
+                    transition: {
+                      delay: 0.25,
+                      duration: 1,
+                      ease: 'easeInOut',
+                    },
+                  }}
+                  exit={{ y: 500 }}
+                  className="rounded-full w-72 h-72 bg-tycho-blue z-10 justify-self-center self-center"
+                />
+
+                <div className="text-tycho-white text-6xl absolute right-[7vw]  z-50 flex flex-col items-center">
+                  {data.map(({ id, title }, index) => (
+                    <div
+                      className="relative group max-w-max"
+                      key={id}
+                      onMouseEnter={() => setToggleHover(index)}
+                      onMouseLeave={() => setToggleHover(null)}
+                    >
+                      <h2 className="pb-6 font-braille relative filter group-hover:blur-[5px] animate">
+                        {title}
+                      </h2>
+                      <AnimatePresence>
+                        {toggleHover === index && (
+                          <motion.span
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            className="absolute w-full -top-1 left-0 font-mono uppercase text-5xl text-tycho-white z-20 text-center"
+                          >
+                            {title}
+                          </motion.span>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <motion.div className="relative w-full h-1/2 self-end bg-tycho-orange-dark z-50">
+                <motion.div
+                  variants={item}
+                  exit={{ opacity: 0 }}
+                  className="h-1/5 w-full bg-tycho-orange-dark"
+                />
+                <motion.div
+                  variants={item}
+                  exit={{ opacity: 0 }}
+                  className="h-2/6 w-full  bg-tycho-orange"
+                />
+                <motion.div
+                  variants={item}
+                  exit={{ opacity: 0 }}
+                  className="h-3/6 w-full  bg-tycho-orange-light"
+                />
+                <div className="w-full h-full absolute bottom-0 flex justify-center">
+                  <motion.div
+                    initial={{ y: 500, scale: 0.25 }}
+                    animate={{
+                      y: 1,
+                      scale: 1,
+                      transition: {
+                        duration: 1,
+                        ease: 'easeInOut',
+                      },
+                    }}
+                    exit={{ y: 500 }}
+                    className="tycho-menu w-5/6 h-full bg-tycho-white relative"
+                  >
+                    <div className="h-full absolute bottom-0 left-0 z-50">
+                      <div
+                        className="h-full w-[60%] bg-tycho-black"
+                        style={{
+                          clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)',
+                        }}
+                      />
+                      <div
+                        className="h-full w-[10%] bg-tycho-blue"
+                        style={{
+                          clipPath: 'polygon(0 0%, 75% 0, 100% 100%, 25% 100%)',
+                        }}
+                      />
+                    </div>
+                  </motion.div>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };

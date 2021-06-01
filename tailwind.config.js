@@ -1,3 +1,5 @@
+const { tycho } = require('./styles/colorThemes');
+
 module.exports = {
   mode: 'jit',
   purge: [
@@ -20,6 +22,7 @@ module.exports = {
         reg: '0 5px 5px rgba(0, 0, 0, .5)',
       },
       colors: {
+        tycho,
         hotpink: '#DE3285',
         transparent: 'transparent',
         black: '#000',
@@ -462,8 +465,9 @@ module.exports = {
       ],
       outline: ['Bison ThickOutline'],
       body: ['Spectral'],
+      braille: ['VisualBraille'],
       mono: [
-        'Monaco',
+        'Oxygen Mono',
         'ui-monospace',
         'SFMono-Regular',
         'Menlo',

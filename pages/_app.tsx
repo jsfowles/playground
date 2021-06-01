@@ -14,9 +14,16 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-
+        <link
+          href="http://fonts.cdnfonts.com/css/visual-braille"
+          rel="stylesheet"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Karla:wght@200;500&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap"
           rel="stylesheet"
         />
         <link

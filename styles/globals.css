@@ -94,7 +94,6 @@ p.button-one {
 }
 
 
-
 .button-three::before {
     content: '';
     transition: all 0.3s;
@@ -138,4 +137,12 @@ button {
     transform: rotateX(30deg);
     box-shadow: 0 5px 0 #750014;
     border-radius: 4px
+}
+
+.tycho-menu {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+}
+
+.tycho-grad {
+    background: linear-gradient(to right, rgba(47,62,83,1) 13%,rgba(117,108,135,1) 13%,rgba(117,108,135,1) 21%,rgba(163,109,143,1) 21%,rgba(163,109,143,1) 29%,rgba(117,108,135,1) 29%,rgba(171,98,125,1) 29%,rgba(171,98,125,1) 38%,rgba(171,98,125,1) 38%,rgba(210,116,134,1) 38%,rgba(210,116,134,1) 47%,rgba(184,105,98,1) 47%,rgba(184,105,98,1) 47%,rgba(184,105,98,1) 58%,rgba(210,116,134,1) 58%,rgba(184,105,98,1) 58%,rgba(184,105,98,1) 65%,rgba(210,121,102,1) 65%);
 }
