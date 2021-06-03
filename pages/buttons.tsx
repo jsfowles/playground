@@ -24,7 +24,7 @@ const Buttons = () => {
   const [onHoverZero, setOnHoverZero] = React.useState(false);
 
   return (
-    <div className="w-2/5 mx-auto grid gap-y-32 grid-cols-3 justify-items-center pt-[20vh]">
+    <div className="w-2/5 mx-auto grid gap-y-32 grid-cols-3 justify-items-center pt-[20vh] w-full">
       {/*button one*/}
       <div className=" max-w-max h-max text-center">
         <button className="group  relative bg-transparent h-16 px-16 flex items-center justify-center to-pink-500">
@@ -71,7 +71,7 @@ const Buttons = () => {
       {/*button three*/}
       <div className=" max-w-max h-max relative text-center">
         <div className="relative">
-          <button className="button-three h-16 px-16 relative animate text-2xl text-teal-600 z-50">
+          <button className="button-three h-16 px-16 relative animate text-2xl text-teal-600 z-50 uppercase">
             Click
           </button>
         </div>
@@ -233,7 +233,7 @@ const Buttons = () => {
       {/*button six*/}
       <div className="max-w-max h-max relative text-center flex flex-col">
         <button className="button-six flex h-16 filter hover:drop-shadow-reg animate">
-          <div className="button-six-child px-14 text-white bg-red-400 w-full h-full flex items-center justify-center text-2xl">
+          <div className="button-six-child px-14 text-white bg-red-400 w-full h-full flex items-center uppercase justify-center text-2xl">
             button
           </div>
         </button>
