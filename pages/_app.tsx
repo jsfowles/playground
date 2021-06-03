@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import '../styles/globals.css';
+import '../styles/typography.css';
 import Head from 'next/head';
 import Layout from '@components/Layout';
 import { ThemeProvider } from 'next-themes';
@@ -27,8 +28,8 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
         <link
+          href="https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap"
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Limelight&effect=outline"
         />
       </Head>
       <Layout>

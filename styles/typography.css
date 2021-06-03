@@ -1,18 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
     @font-face {
-        font-family: 'Bison';
-        url('Bison-Bold.ttf') format('truetype');
-        font-weight: bold;
+        font-family: Bison ThickOutline;
+        src: url(/fonts/Bison-ThickOutline.ttf) format("truetype");
+        font-weight: 900;
         font-style: normal;
-        font-display: swap;
+        font-display: swap
     }
 
     @font-face {
-        font-family: 'Bison ThickOutline';
-
-        url('Bison-ThickOutline.ttf') format('truetype');
-        font-weight: 900;
+        font-family: Bison;
+        src: url(/fonts/Bison-Bold.ttf) format("truetype");
+        font-weight: 700;
         font-style: normal;
-        font-display: swap;
+        font-display: swap
     }
 }
