@@ -43,70 +43,51 @@ const Home = () => {
           </svg>
         )}
       </button>
-      <div className="text-center md:text-left">
-        <Fade>
-          <Reveal direction="right">
-            <h1 className="dark:text-white text-5xl md:text-9xl font-outline">
-              hello world.
-            </h1>
-          </Reveal>
-        </Fade>
-        <Fade>
-          <Reveal direction="right">
-            <h2 className="text-4xl md:text-8xl font-serif">this is a</h2>
-          </Reveal>
-        </Fade>
-        <Fade>
-          <Reveal direction="right">
-            <h3 className="text-3xl md:text-6xl md:pt-4 font-body">
-              <span className="text-cyan-400">
-                <ReactRotatingText
-                  items={[
-                    'tailwind',
-                    'react',
-                    'typescript',
-                    'motion',
-                    'next.js',
-                  ]}
-                />{' '}
-              </span>
-              playground.
-            </h3>
-          </Reveal>
-        </Fade>
-        <Fade>
-          <Reveal direction="right">
-            <p className="p-8 text-left text-xs font-mono">
-              This site contains a bunch of random stuff I've made, good and
-              bad. Spacing is all different, fonts don't pair well, some links
-              are broken.
-              <br />
-              <br />
-              Please view on desktop, not many mobile views as of now. This is
-              an experimental playground I use to give Underbelly designers a
-              preview of micro-interactions, navigations, and components.
-              <br />
-              <br />
-              Navigation is a bit rough but I thought it was fun... so deal with
-              it.
-            </p>
-          </Reveal>
-        </Fade>
-        <Fade>
-          <Reveal direction="right">
-            <p className="py-4 text-xs font-mono">
-              by{' '}
-              <a
-                className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all"
-                target="__blank"
-                href="https://github.com/jsfowles"
-              >
-                jsfowles
-              </a>{' '}
-            </p>
-          </Reveal>
-        </Fade>
-        <Fade>
+      <div className="text-center md:text-left  p-8">
+        <div className="mx-auto">
+          <h1 className="dark:text-white text-5xl md:text-9xl font-outline ">
+            hello world.
+          </h1>
+
+          <h2 className="text-4xl md:text-8xl font-serif ">this is a</h2>
+
+          <h3 className="text-3xl md:text-6xl md:pt-4 font-body ">
+            <span className="text-cyan-400">
+              <ReactRotatingText
+                items={['tailwind', 'react', 'typescript', 'motion', 'next.js']}
+              />{' '}
+            </span>
+            playground.
+          </h3>
+        </div>
+        <article className="">
+          <p className="text-left text-xs font-mono pt-16 prose">
+            This site contains a bunch of random stuff I've made, good and bad.
+            Spacing is all different, fonts don't pair well, some links are
+            broken.
+            <br />
+            <br />
+            Please view on desktop, not many mobile views as of now. This is an
+            experimental playground I use to give{' '}
+            <a href="https://underbelly.is">Underbelly</a> designers a preview
+            of micro-interactions, navigations, and components.
+            <br />
+            <br />
+            Navigation is a bit rough but I thought it was fun... so deal with
+            it.
+          </p>
+
+          <p className="py-4 text-xs font-mono ">
+            by{' '}
+            <a
+              className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all"
+              target="__blank"
+              href="https://github.com/jsfowles"
+            >
+              jsfowles
+            </a>{' '}
+          </p>
+
           <a
             target="__blank"
             className="font-mono text-xs hover:text-pink text-cyan-400 duration-200 transition-all"
@@ -114,7 +95,7 @@ const Home = () => {
           >
             github
           </a>
-        </Fade>
+        </article>
       </div>
     </div>
   );
