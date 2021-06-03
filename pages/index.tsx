@@ -70,7 +70,7 @@ const Home = () => {
                   ]}
                 />{' '}
               </span>
-              template.
+              playground.
             </h3>
           </Reveal>
         </Fade>
@@ -81,33 +81,17 @@ const Home = () => {
               <a
                 className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all"
                 target="__blank"
-                href="https://github.com/jessieleigh30"
-              >
-                jessieleigh30
-              </a>{' '}
-              &&{' '}
-              <a
-                className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all"
-                target="__blank"
                 href="https://github.com/jsfowles"
               >
                 jsfowles
               </a>{' '}
-              &&{' '}
-              <a
-                className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all"
-                target="__blank"
-                href="https://github.com/simplycomplexable"
-              >
-                simplycomplexable
-              </a>
             </p>
           </Reveal>
         </Fade>
         <Fade>
           <a
             target="__blank"
-            className="font-mono text-xs hover:text-cyan-400 duration-200 transition-all"
+            className="font-mono text-xs hover:text-pink text-cyan-400 duration-200 transition-all"
             href="https://github.com/jsfowles/tw-template"
           >
             github
