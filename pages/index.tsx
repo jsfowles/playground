@@ -76,6 +76,24 @@ const Home = () => {
         </Fade>
         <Fade>
           <Reveal direction="right">
+            <p className="p-8 text-left text-xs font-mono">
+              This site contains a bunch of random stuff I've made, good and
+              bad. Spacing is all different, fonts don't pair well, some links
+              are broken.
+              <br />
+              <br />
+              Please view on desktop, not many mobile views as of now. This is
+              an experimental playground I use to give Underbelly designers a
+              preview of micro-interactions, navigations, and components.
+              <br />
+              <br />
+              Navigation is a bit rough but I thought it was fun... so deal with
+              it.
+            </p>
+          </Reveal>
+        </Fade>
+        <Fade>
+          <Reveal direction="right">
             <p className="py-4 text-xs font-mono">
               by{' '}
               <a
