@@ -25,7 +25,7 @@ const Buttons = () => {
 
   return (
     <div className="w-2/5 mx-auto grid gap-y-32 grid-cols-3 justify-items-center pt-[20vh] w-full">
-      {/*button one*/}
+      {/*button sbs*/}
       <div className=" max-w-max h-max text-center">
         <button className="group  relative bg-transparent h-16 px-16 flex items-center justify-center to-pink-500">
           <p className="button-one transition duration-500 ease-in-out relative z-50 font-serif text-3xl tracking-wider bg-gradient-to-l from-cyan-500 to-pink-500">

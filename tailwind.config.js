@@ -18,6 +18,13 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+        'pos-0': '0% 0%',
+        'pos-100': '100% 100%',
+      },
       dropShadow: {
         reg: '0 5px 5px rgba(0, 0, 0, .5)',
       },
@@ -436,14 +443,6 @@ module.exports = {
       0: '0',
       DEFAULT: '1',
     },
-    fontFamily: {
-      sans: ['Karla', 'ui-sans-serif'],
-      serif: ['Bison', '"Times New Roman"'],
-      outline: ['Bison ThickOutline'],
-      body: ['Spectral'],
-      braille: ['VisualBraille'],
-      mono: ['Oxygen Mono', 'ui-monospace'],
-    },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
       sm: ['0.875rem', { lineHeight: '1.25rem' }],
@@ -771,6 +770,14 @@ module.exports = {
       10: '10',
       11: '11',
       12: '12',
+    },
+    fontFamily: {
+      sans: ['Karla', 'ui-sans-serif'],
+      serif: ['Bison', '"Times New Roman"'],
+      outline: ['Bison ThickOutline'],
+      body: ['Spectral'],
+      braille: ['VisualBraille'],
+      mono: ['Oxygen Mono', 'ui-monospace'],
     },
     outline: {
       none: ['2px solid transparent', '2px'],
