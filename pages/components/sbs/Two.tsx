@@ -31,7 +31,7 @@ const Two = () => (
           </div>
         </div>
 
-        <div className="relative bg-white lg:border-2 lg:border-cyan-200 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+        <div className="relative bg-white shadow-2xl lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
           <div
             className="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block"
             aria-hidden="true"

@@ -1,8 +1,8 @@
-// @ts-nocheck
+import withTransition from '@lib/withTransition';
 import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
-import withTransition from '@lib/withTransition';
-import Link from 'next/link';
+
+
 
 const data = [
   {
@@ -59,28 +59,24 @@ const One = () => {
           className="absolute right-0 px-10 z-50 flex justify-end"
         >
           <div
-            className={`h-12 w-12 relative z-50 flex justify-evenly items-end flex-col p-1 transition duration-500 ease-in-out ring-2 ring-tycho-white rounded-full ${
-              toggleNav ? 'ring-opacity-100' : 'ring-opacity-0'
-            }`}
+            className={`h-12 w-12 relative z-50 flex justify-evenly items-end flex-col p-1 transition duration-500 ease-in-out ring-2 ring-tycho-white rounded-full ${toggleNav ? 'ring-opacity-100' : 'ring-opacity-0'
+              }`}
           >
             <span
-              className={`block rounded-full duration-500 ease-in-out h-0.5 ${
-                toggleNav
-                  ? 'transform -rotate-45 w-full bg-tycho-white translate-y-3'
+              className={`block rounded-full duration-500 ease-in-out h-0.5 ${toggleNav
+                  ? 'transform -rotate-45 w-full bg-tycho-white bg-p translate-y-3'
                   : 'bg-tycho-black w-2/3'
-              }`}
+                }`}
             />
             <span
-              className={`block h-0.5 ${
-                toggleNav ? 'opacity-0' : 'opacity-100'
-              } bg-tycho-black w-full rounded-full transition duration-500 ease-in-out`}
+              className={`block h-0.5 ${toggleNav ? 'opacity-0' : 'opacity-100'
+                } bg-tycho-black w-full rounded-full transition duration-500 ease-in-out`}
             />
             <span
-              className={`block h-0.5 transform rounded-full transition duration-500 ease-in-out ${
-                toggleNav
+              className={`block h-0.5 transform rounded-full transition duration-500 ease-in-out ${toggleNav
                   ? 'w-full bg-tycho-white rotate-45 -translate-y-2.5'
                   : 'bg-tycho-black w-1/2'
-              }`}
+                }`}
             />
           </div>
         </nav>

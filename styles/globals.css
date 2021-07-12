@@ -161,11 +161,3 @@ button {
     rgba(210, 121, 102, 1) 65%
   );
 }
-
-.button-three {
-  transition: all 500ms ease;
-  transform: rotateY(-20deg) rotateX(-20deg);
-}
-
-.button-three {
-}
