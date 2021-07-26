@@ -12,6 +12,7 @@
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "framer-motion": "^3.10.2",
+    "lodash": "^4.17.21",
     "next": "^10.2.2",
     "next-themes": "^0.0.12",
     "react": "17.0.1",

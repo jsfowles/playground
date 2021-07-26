@@ -28,13 +28,14 @@ const Three = () => {
           <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-28 xl:px-20 flex items-center">
             <div className="">
               <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                <span className="block text-sans">Where imagination meets</span>
-                <span className="block"> invention...</span>
+                <span className="block text-sans">Aliquam imperdiet elit</span>
+                <span className="block"> consectetur...</span>
               </h2>
               <p className="mt-4 text-lg leading-6 text-white">
-                At Tendo, we believe in a world where software can create
-                frictionless healthcare experiences for patients, caregivers,
-                and providers. Stay tuned to see what we are dreaming up!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                vitae lacus leo. Aliquam imperdiet elit ut aliquet euismod.
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Aliquam erat volutpat.
               </p>
               <motion.button
                 onMouseEnter={() => setOnHoverZero(true)}

@@ -24,18 +24,40 @@ const Buttons = () => {
   const [onHoverZero, setOnHoverZero] = React.useState(false);
 
   return (
-    <div className="w-2/5 mx-auto grid gap-y-32 grid-cols-3 justify-items-center pt-[20vh] w-full">
-      {/*button sbs*/}
+    <div className="w-3/5 mx-auto grid gap-y-32 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center pt-[20vh] w-full">
+      <div className="max-w-max h-max text-center">
+        <button className=" h-[70px] w-[200px] group">
+          <div className="h-full w-full relative">
+            <div className="transition-all duration-500 ease-in-out h-full w-full bg-black flex justify-center items-center absolute inset-0 z-30 transform -translate-y-1.5  translate-x-1.5 group-hover:translate-x-2.5 group-hover:-translate-y-2.5">
+              <p className="text-white">Contact Us</p>
+            </div>
+            <div className="h-full w-full bg-red-500 relative z-20  " />
+            <div className="transition-all duration-500 ease-in-out h-full w-full bg-blue-700 absolute inset-0 z-0 transform translate-y-1.5  -translate-x-1.5 group-hover:-translate-x-2.5 group-hover:translate-y-2.5" />
+          </div>
+        </button>
+        <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
+          <h4 className="text-7xl text-gray-600 font-outline">1.</h4>
+          <div className="text-left pl-8">
+            <p className="text-sm text-cyan-400 mb-2">tech:</p>
+            <ul className="list-disc ">
+              <li>Tailwind</li>
+              <li>CSS</li>
+              <li>Matt F-ing Scribner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/*button one*/}
       <div className=" max-w-max h-max text-center">
         <button className="group  relative bg-transparent h-16 px-16 flex items-center justify-center to-pink-500">
-          <p className="button-one transition duration-500 ease-in-out relative z-50 font-serif text-3xl tracking-wider bg-gradient-to-l from-cyan-500 to-pink-500">
+          <p className="button-one transition duration-500 ease-in-out relative z-50 font-serif text-xl tracking-wider bg-gradient-to-l from-cyan-500 to-pink-500">
             Click
           </p>
           <div className="group-hover:bg-black bg-gray-700 absolute transition duration-500 ease-in-out inset-0 border-lg z-40 rounded-full mx-auto w-[100%] group-hover:w-[90%]" />
           <div className="transition duration-500 ease-in-out mx-auto transform w-[100%] bg-gradient-to-r from-cyan-500 to-pink-500 absolute inset-0 z-30 rounded-full" />
         </button>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
-          <h4 className="text-7xl text-gray-600 font-outline">1.</h4>
+          <h4 className="text-7xl text-gray-600 font-outline">2.</h4>
           <div className="text-left pl-8">
             <p className="text-sm text-cyan-400 mb-2">tech:</p>
             <ul className="list-disc ">
@@ -58,7 +80,7 @@ const Buttons = () => {
           <span className="h-4/5 bg-orange-300 w-0.5 absolute left-3 top-2 z-10" />
         </div>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
-          <h4 className="text-7xl text-gray-600 font-outline">2.</h4>
+          <h4 className="text-7xl text-gray-600 font-outline">3.</h4>
           <div className="text-left pl-8">
             <p className="text-sm text-cyan-400 mb-2">tech:</p>
             <ul className="list-disc">
@@ -76,7 +98,7 @@ const Buttons = () => {
           </button>
         </div>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
-          <h4 className="text-7xl text-gray-600 font-outline">3.</h4>
+          <h4 className="text-7xl text-gray-600 font-outline">4.</h4>
           <div className="text-left pl-8">
             <p className="text-sm text-cyan-400 mb-2">tech:</p>
             <ul className="list-disc">
@@ -182,7 +204,7 @@ const Buttons = () => {
           </motion.span>
         </motion.button>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center ">
-          <h4 className="text-7xl text-gray-600 font-outline">4.</h4>
+          <h4 className="text-7xl text-gray-600 font-outline">5.</h4>
           <div className="text-left pl-8">
             <p className="text-sm text-cyan-400 mb-2">tech:</p>
             <ul className="list-disc ">
@@ -221,7 +243,7 @@ const Buttons = () => {
           </span>
         </button>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center filter group-hover:drop-shadow-reg animate">
-          <h4 className="text-7xl text-gray-600 font-outline">5.</h4>
+          <h4 className="text-7xl text-gray-600 font-outline">6.</h4>
           <div className="text-left pl-8">
             <p className="text-sm text-cyan-400 mb-2">tech:</p>
             <ul className="list-disc ">
@@ -238,7 +260,7 @@ const Buttons = () => {
           </div>
         </button>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
-          <h4 className="text-7xl text-gray-600 font-outline">6.</h4>
+          <h4 className="text-7xl text-gray-600 font-outline">7.</h4>
           <div className="text-left pl-8">
             <p className="text-sm text-cyan-400 mb-2">tech:</p>
             <ul className="list-disc ">

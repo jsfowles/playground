@@ -26,7 +26,7 @@ const Navigation = () => {
 
   return (
     <div
-      className="group flex absolute items-center transition transition-all duration-300 top-2 md:top-10 left-2 md:left-10"
+      className="group flex fixed items-center transition transition-all duration-300 top-2 md:top-10 left-2 md:left-10 z-50"
       onMouseEnter={() => setOnHover(true)}
       onMouseLeave={() => setOnHover(false)}
     >
