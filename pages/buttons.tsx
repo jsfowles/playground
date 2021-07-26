@@ -50,7 +50,7 @@ const Buttons = () => {
       {/*button one*/}
       <div className=" max-w-max h-max text-center">
         <button className="group  relative bg-transparent h-16 px-16 flex items-center justify-center to-pink-500">
-          <p className="button-one transition duration-500 ease-in-out relative z-50 font-serif text-xl tracking-wider bg-gradient-to-l from-cyan-500 to-pink-500">
+          <p className="button-one transition duration-500 ease-in-out relative z-50 font-serif text-2xl tracking-widest bg-gradient-to-l from-cyan-500 to-pink-500">
             Click
           </p>
           <div className="group-hover:bg-black bg-gray-700 absolute transition duration-500 ease-in-out inset-0 border-lg z-40 rounded-full mx-auto w-[100%] group-hover:w-[90%]" />
