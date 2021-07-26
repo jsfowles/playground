@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "TAILEIND_MODE=watch next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -19,8 +19,7 @@
     "react-dom": "17.0.1",
     "react-intersection-observer": "^8.31.0",
     "react-responsive": "^8.2.0",
-    "react-rotating-text": "^1.4.1",
-    "tailwindcss": "^2.1.2"
+    "react-rotating-text": "^1.4.1"
   },
   "devDependencies": {
     "@heroicons/react": "^1.0.1",
@@ -29,6 +28,7 @@
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.15",
     "prettier": "^2.2.1",
+    "tailwindcss": "^2.2.7",
     "typescript": "^4.1.5"
   }
 }

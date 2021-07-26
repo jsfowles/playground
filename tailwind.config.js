@@ -7,7 +7,6 @@ module.exports = {
     './src/**/*.{js,jsx,ts,tsx,vue}',
     './pages/**/*.{js,jsx,ts,tsx,vue}',
   ],
-  presets: [],
   darkMode: 'class',
   theme: {
     screens: {
@@ -19,10 +18,11 @@ module.exports = {
     },
     extend: {
       backgroundSize: {
-        'size-200': '200% 200%',
+        'size-200': '140% 200%',
       },
       backgroundPosition: {
         'pos-0': '0% 0%',
+        'pos-50': '50% 100%',
         'pos-100': '100% 100%',
       },
       dropShadow: {
