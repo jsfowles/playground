@@ -24,12 +24,12 @@ const Buttons = () => {
   const [onHoverZero, setOnHoverZero] = React.useState(false);
 
   return (
-    <div className="w-3/5 mx-auto grid gap-y-32 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center pt-[20vh] w-full">
+    <div className="w-3/5 mx-auto grid gap-y-32 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-items-center py-[20vh] w-full">
       <div className="max-w-max h-max text-center">
         <button className=" h-[70px] w-[200px] group">
           <div className="h-full w-full relative">
             <div className="transition-all duration-500 ease-in-out h-full w-full bg-black flex justify-center items-center absolute inset-0 z-30 transform -translate-y-1.5  translate-x-1.5 group-hover:translate-x-2.5 group-hover:-translate-y-2.5">
-              <p className="text-white">Contact Us</p>
+              <p className="text-white text-xl">Contact Us</p>
             </div>
             <div className="h-full w-full bg-red-500 relative z-20  " />
             <div className="transition-all duration-500 ease-in-out h-full w-full bg-blue-700 absolute inset-0 z-0 transform translate-y-1.5  -translate-x-1.5 group-hover:-translate-x-2.5 group-hover:translate-y-2.5" />
