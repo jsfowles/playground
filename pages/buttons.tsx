@@ -28,11 +28,11 @@ const Buttons = () => {
       <div className="max-w-max h-max text-center">
         <button className=" h-[70px] w-[200px] group">
           <div className="h-full w-full relative">
-            <div className="transition-all duration-500 ease-in-out h-full w-full bg-black flex justify-center items-center absolute inset-0 z-30 transform -translate-y-1.5  translate-x-1.5 group-hover:translate-x-2.5 group-hover:-translate-y-2.5">
+            <div className="transition-all duration-200 ease-in-out h-full w-full bg-black flex justify-center items-center absolute inset-0 z-30 transform -translate-y-1.5  translate-x-1.5 group-hover:translate-x-2.5 group-hover:-translate-y-2.5">
               <p className="text-white text-xl">ScriButt</p>
             </div>
             <div className="h-full w-full bg-red-500 relative z-20  " />
-            <div className="transition-all duration-500 ease-in-out h-full w-full bg-blue-700 absolute inset-0 z-0 transform translate-y-1.5  -translate-x-1.5 group-hover:-translate-x-2.5 group-hover:translate-y-2.5" />
+            <div className="transition-all duration-200 ease-in-out h-full w-full bg-blue-700 absolute inset-0 z-0 transform translate-y-1.5  -translate-x-1.5 group-hover:-translate-x-2.5 group-hover:translate-y-2.5" />
           </div>
         </button>
         <div className="font-serif text-gray-600 tracking-widest mt-10 flex justify-evenly items-center">
