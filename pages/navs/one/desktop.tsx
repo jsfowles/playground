@@ -1,8 +1,7 @@
 import withTransition from '@lib/withTransition';
 import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
-
-
+const br = require('braille');
 
 const data = [
   {
@@ -59,24 +58,28 @@ const One = () => {
           className="absolute right-0 px-10 z-50 flex justify-end"
         >
           <div
-            className={`h-12 w-12 relative z-50 flex justify-evenly items-end flex-col p-1 transition duration-500 ease-in-out ring-2 ring-tycho-white rounded-full ${toggleNav ? 'ring-opacity-100' : 'ring-opacity-0'
-              }`}
+            className={`h-12 w-12 relative z-50 flex justify-evenly items-end flex-col p-1 transition duration-500 ease-in-out ring-2 ring-tycho-white rounded-full ${
+              toggleNav ? 'ring-opacity-100' : 'ring-opacity-0'
+            }`}
           >
             <span
-              className={`block rounded-full duration-500 ease-in-out h-0.5 ${toggleNav
+              className={`block rounded-full duration-500 ease-in-out h-0.5 ${
+                toggleNav
                   ? 'transform -rotate-45 w-full bg-tycho-white bg-p translate-y-3'
                   : 'bg-tycho-black w-2/3'
-                }`}
+              }`}
             />
             <span
-              className={`block h-0.5 ${toggleNav ? 'opacity-0' : 'opacity-100'
-                } bg-tycho-black w-full rounded-full transition duration-500 ease-in-out`}
+              className={`block h-0.5 ${
+                toggleNav ? 'opacity-0' : 'opacity-100'
+              } bg-tycho-black w-full rounded-full transition duration-500 ease-in-out`}
             />
             <span
-              className={`block h-0.5 transform rounded-full transition duration-500 ease-in-out ${toggleNav
+              className={`block h-0.5 transform rounded-full transition duration-500 ease-in-out ${
+                toggleNav
                   ? 'w-full bg-tycho-white rotate-45 -translate-y-2.5'
                   : 'bg-tycho-black w-1/2'
-                }`}
+              }`}
             />
           </div>
         </nav>
@@ -116,7 +119,7 @@ const One = () => {
                       onMouseLeave={() => setToggleHover(null)}
                     >
                       <h2 className="pb-6 font-braille relative filter group-hover:blur-[5px] animate">
-                        {title}
+                        {br.toBraille(title)}
                       </h2>
                       <AnimatePresence>
                         {toggleHover === index && (
@@ -124,7 +127,7 @@ const One = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
-                            className="absolute w-full -top-1 left-0 font-mono uppercase text-5xl text-tycho-white z-20 text-center"
+                            className="absolute w-full top-1 left-0 font-mono uppercase text-5xl text-tycho-white z-20 text-center"
                           >
                             {title}
                           </motion.span>

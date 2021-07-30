@@ -11,6 +11,7 @@ import { AnimatePresence } from 'framer-motion';
 function MyApp({ Component, pageProps }) {
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
   const router = useRouter();
+
   return (
     <>
       <Head>
