@@ -19,41 +19,42 @@ const Filter = () => {
     }
   }, [filter]);
 
-  const str = 'mississippi';
-  const strArray = str.split('');
-  const strObj = strArray.reduce((obj, letter) => {
-    obj[letter] = obj[letter] || 0;
-    obj[letter]++;
-    return obj;
-  }, {});
+  const zachIsMeanToMe = (str) => {
+    const strArray = str.split('');
+    const strObj = strArray.reduce((obj, letter) => {
+      obj[letter] = obj[letter] || 0;
+      obj[letter]++;
+      return obj;
+    }, {});
 
-  const result = strArray.map((letter) =>
-    Object.entries(strObj).map(([key, value]) => {
-      console.log(key);
-    })
-  );
+    const supCode = {
+      0: '\u2070',
+      1: `\u00B9`,
+      2: `\u00B2`,
+      3: '\u00b3',
+      4: `\u2074`,
+      5: '\u2075',
+      6: '\u2076',
+      7: '\u2077',
+      8: '\u2078',
+      9: '\u2079',
+    };
+
+    const results = strArray.map((letter) => {
+      const count = strObj[letter];
+      const value = supCode[count];
+      const supWord = `${letter}${value}`;
+
+      return supWord;
+    });
+
+    return results.join('');
+  };
+
+  console.log(zachIsMeanToMe('balls'));
 
   return (
     <div className="text-center pt-20">
-      <div className="flex justify-center">
-        {strArray.map((letter) => (
-          <div className="flex">
-            {Object.entries(strObj).map(([key, value]) => {
-              return (
-                <>
-                  {letter === key ? (
-                    // <div className="flex">
-                    //   <p className="uppercase">{key}</p>
-                    //   <sup className="top-0">{value}</sup>
-                    // </div>
-                    <>{console.log(key, value)}</>
-                  ) : null}
-                </>
-              );
-            })}
-          </div>
-        ))}
-      </div>
       <div className="pt-20">
         <h3>Gender</h3>
         <label>

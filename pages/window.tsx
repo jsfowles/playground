@@ -22,7 +22,7 @@ const Windows = () => {
 
   // const handleWheel = React.useCallback(
   //   (e) => {
-  //     console.log('here');
+
   //     e.preventDefault();
   //
   //     setShowShadow(window.scrollY > 0);
@@ -32,18 +32,13 @@ const Windows = () => {
 
   const debouncedHandleWheel = React.useMemo(() => {
     const handleWheel = (e) => {
-      console.log('here', window.scrollY);
-
       setScrollCount((curr) => curr + 1);
       setShowShadow(window.scrollY > 0);
     };
     return handleWheel;
   }, [setShowShadow, setScrollCount]);
 
-  console.log(scrollCount);
-
   React.useEffect(() => {
-    console.log('useEffect');
     window.addEventListener('wheel', debouncedHandleWheel);
     return () => window.removeEventListener('wheel', debouncedHandleWheel);
   }, [debouncedHandleWheel]);

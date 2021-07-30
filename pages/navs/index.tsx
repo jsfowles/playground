@@ -147,7 +147,7 @@ const Navs = () => {
                       exit={{ opacity: 0 }}
                       className="absolute inset-0 font-serif hover:font-serif text-6xl text-cyan-500 z-20"
                     >
-                      <Link href="https://thrashio.vercel.app/" passHref>
+                      <Link href="/navs/three" passHref>
                         <a>desktop</a>
                       </Link>
                     </motion.span>

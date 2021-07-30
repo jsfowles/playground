@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
           href="http://fonts.cdnfonts.com/css/visual-braille"
           rel="stylesheet"
         />
+
         <link
           href="https://fonts.googleapis.com/css2?family=Karla:wght@200;500&display=swap"
           rel="stylesheet"
