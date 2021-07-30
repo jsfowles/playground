@@ -107,7 +107,7 @@ const One = () => {
                     },
                   }}
                   exit={{ y: 500 }}
-                  className="rounded-full w-72 h-72 bg-tycho-blue z-10 justify-self-center self-center"
+                  className="rounded-full w-[25vw] h-[25vw] bg-tycho-blue z-10 justify-self-center self-center"
                 />
 
                 <div className="text-tycho-white text-6xl absolute right-[7vw]  z-50 flex flex-col items-center">
@@ -137,7 +137,7 @@ const One = () => {
                   ))}
                 </div>
               </div>
-              <motion.div className="relative w-full h-1/2 self-end bg-tycho-orange-dark z-50">
+              <motion.div className="relative w-full h-1/2 self-end bg-tycho-orange z-50">
                 <motion.div
                   variants={item}
                   exit={{ opacity: 0 }}
