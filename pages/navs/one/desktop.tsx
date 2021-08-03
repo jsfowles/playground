@@ -107,7 +107,7 @@ const One = () => {
                     },
                   }}
                   exit={{ y: 500 }}
-                  className="rounded-full w-[25vw] h-[25vw] bg-tycho-blue z-10 justify-self-center self-center"
+                  className="rounded-full w-[55vw] h-[55vw] bg-tycho-blue z-10 justify-self-center self-center"
                 />
 
                 <div className="text-tycho-white text-6xl absolute right-[7vw]  z-50 flex flex-col items-center">
