@@ -40,32 +40,6 @@ const Navs = () => {
                   )}
                 </AnimatePresence>
               </p>
-              <p
-                className="my-4 relative mt-12"
-                onMouseEnter={() => setToggleHover(1)}
-                onMouseLeave={() => setToggleHover(false)}
-              >
-                Mobile
-                <AnimatePresence>
-                  {toggleHover === 1 && (
-                    <motion.span
-                      initial={{ opacity: 0 }}
-                      animate={{
-                        opacity: 1,
-                        x: 4,
-
-                        transition: { delay: 0.25 },
-                      }}
-                      exit={{ opacity: 0 }}
-                      className="absolute inset-0 font-serif hover:font-serif text-6xl text-cyan-500 z-20"
-                    >
-                      <Link href="/navs/one/mobile" passHref>
-                        Mobile
-                      </Link>
-                    </motion.span>
-                  )}
-                </AnimatePresence>
-              </p>
             </div>
           </motion.li>
           <motion.li className="mx-10 relative flex items-center">
@@ -118,37 +92,6 @@ const Navs = () => {
                     >
                       <Link href="/navs/two/mobile" passHref>
                         Mobile
-                      </Link>
-                    </motion.span>
-                  )}
-                </AnimatePresence>
-              </p>
-            </div>
-          </motion.li>
-          <motion.li className="mx-10 relative flex items-center">
-            <h2 className="font-serif text-9xl">3.</h2>
-            <div className="text-6xl ml-8 font-outline">
-              <p
-                className="my-4 relative"
-                onMouseEnter={() => setToggleHover(0)}
-                onMouseLeave={() => setToggleHover(false)}
-              >
-                Desktop
-                <AnimatePresence>
-                  {toggleHover === 0 && (
-                    <motion.span
-                      initial={{ opacity: 0 }}
-                      animate={{
-                        opacity: 1,
-                        x: 4,
-
-                        transition: { delay: 0.25 },
-                      }}
-                      exit={{ opacity: 0 }}
-                      className="absolute inset-0 font-serif hover:font-serif text-6xl text-cyan-500 z-20"
-                    >
-                      <Link href="/navs/three" passHref>
-                        desktop
                       </Link>
                     </motion.span>
                   )}
