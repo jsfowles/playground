@@ -34,7 +34,7 @@ const Navigation = () => {
         className={`
         ${
           onHover ? 'dark:text-cyan-500 text-cyan-500 text-5xl' : ''
-        } leading-4 w-24 h-20 transition font-serif text-2xl transition transition-all duration-300 mr-4 hover:mr-8 tracking-wider dark:text-white`}
+        } leading-4 w-24 h-24 transition font-serif text-2xl transition transition-all duration-300 tracking-wider dark:text-white`}
       >
         Menu
       </button>
@@ -57,7 +57,7 @@ const Navigation = () => {
               {data.map(({ id, title, route }, index) => (
                 <>
                   <motion.div
-                    className="flex"
+                    className="flex hover:pl-3 transition-all duration-500"
                     key={id}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
