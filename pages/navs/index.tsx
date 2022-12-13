@@ -34,7 +34,7 @@ const Navs = () => {
                       className="absolute inset-0 font-serif hover:font-serif text-6xl text-cyan-500 z-20"
                     >
                       <Link href="/navs/one/desktop" passHref>
-                        <a>desktop</a>
+                        desktop
                       </Link>
                     </motion.span>
                   )}
@@ -60,7 +60,7 @@ const Navs = () => {
                       className="absolute inset-0 font-serif hover:font-serif text-6xl text-cyan-500 z-20"
                     >
                       <Link href="/navs/one/mobile" passHref>
-                        <a>Mobile</a>
+                        Mobile
                       </Link>
                     </motion.span>
                   )}
@@ -91,7 +91,7 @@ const Navs = () => {
                       className="absolute inset-0 font-serif hover:font-serif text-6xl text-cyan-500 z-20"
                     >
                       <Link href="/navs/two/desktop" passHref>
-                        <a>Desktop</a>
+                        Desktop
                       </Link>
                     </motion.span>
                   )}
@@ -117,7 +117,7 @@ const Navs = () => {
                       className="absolute inset-0 font-serif hover:font-serif text-6xl text-cyan-500 z-20"
                     >
                       <Link href="/navs/two/mobile" passHref>
-                        <a>Mobile</a>
+                        Mobile
                       </Link>
                     </motion.span>
                   )}
@@ -148,7 +148,7 @@ const Navs = () => {
                       className="absolute inset-0 font-serif hover:font-serif text-6xl text-cyan-500 z-20"
                     >
                       <Link href="/navs/three" passHref>
-                        <a>desktop</a>
+                        desktop
                       </Link>
                     </motion.span>
                   )}

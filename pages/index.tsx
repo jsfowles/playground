@@ -43,7 +43,7 @@ const Home = () => {
           </svg>
         )}
       </button>
-      <div className="text-center md:text-left  p-8">
+      <div className="text-center md:text-left md:w-[650px] p-8">
         <div className="mx-auto">
           <h1 className="dark:text-white text-5xl md:text-9xl font-outline ">
             hello world.
@@ -60,8 +60,8 @@ const Home = () => {
             playground.
           </h3>
         </div>
-        <article className="">
-          <p className="text-left text-xs font-mono pt-16 prose">
+        <article className="flex flex-col items-center">
+          <p className="text-left text-md font-mono pt-16  text-black dark:text-white">
             This site contains a bunch of random stuff I've made, good and bad.
             Spacing is all different, fonts don't pair well, some links are
             broken.
@@ -77,15 +77,15 @@ const Home = () => {
             it.
           </p>
 
-          <p className="py-4 text-xs font-mono ">
-            by{' '}
+          <p className="py-4 text-xs flex font-mono prose">
+            by
             <a
-              className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all"
+              className="text-cyan-400 dark:text-pink hover:text-pink duration-200 transition-all pl-2"
               target="__blank"
               href="https://github.com/jsfowles"
             >
               jsfowles
-            </a>{' '}
+            </a>
           </p>
 
           <a

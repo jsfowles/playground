@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -15,16 +19,42 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@views/*": ["src/views/*"],
-      "@containers/*": ["src/containers/*"],
-      "@components/*": ["src/components/*"],
-      "@typings/*": ["src/types/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@lib/*": ["src/lib/*"],
-      "@theme/*": ["src/theme/*"],
-      "@theme": ["src/theme"],
-    }
+      "@views/*": [
+        "src/views/*"
+      ],
+      "@containers/*": [
+        "src/containers/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@typings/*": [
+        "src/types/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@lib/*": [
+        "src/lib/*"
+      ],
+      "@theme/*": [
+        "src/theme/*"
+      ],
+      "@theme": [
+        "src/theme"
+      ]
+    },
+    "incremental": true
   },
-  "exclude": ["node_modules", ".next", "out"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ]
 }

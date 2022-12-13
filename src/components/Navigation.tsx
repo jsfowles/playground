@@ -66,17 +66,15 @@ const Navigation = () => {
                     onMouseLeave={() => setOnSubHover(null)}
                   >
                     <Link href={route} passHref>
-                      <a>
-                        <li
-                          className={`${
-                            onSubHover === index
-                              ? 'text-cyan-500 dark:text-cyan-500 text-4xl'
-                              : ''
-                          } font-serif text-xl tracking-wider transition transition-all duration-300 dark:text-white`}
-                        >
-                          {title}
-                        </li>
-                      </a>
+                      <li
+                        className={`${
+                          onSubHover === index
+                            ? 'text-cyan-500 dark:text-cyan-500 text-4xl'
+                            : ''
+                        } font-serif text-xl tracking-wider transition transition-all duration-300 dark:text-white`}
+                      >
+                        {title}
+                      </li>
                     </Link>
                   </motion.div>
                 </>

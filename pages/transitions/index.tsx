@@ -35,16 +35,16 @@ const Transitions = () => {
     <AnimatePresence exitBeforeEnter>
       <div key={router.route} {...mainMotion}>
         <Link passHref href="/transitions">
-          <a>Home</a>
+          Home
         </Link>
         <Link passHref href="/transitions/one">
-          <a>Page One</a>
+          Page One
         </Link>
         <Link passHref href="/transitions/two">
-          <a>Page Two</a>
+          Page Two
         </Link>
         <Link passHref href="/transitions/three">
-          <a>Page Three</a>
+          Page Three
         </Link>
       </div>
     </AnimatePresence>

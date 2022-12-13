@@ -15,6 +15,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>js.fowles</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="http://fonts.cdnfonts.com/css/visual-braille"

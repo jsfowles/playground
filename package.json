@@ -8,28 +8,28 @@
     "start": "next start"
   },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.2.0",
-    "@tailwindcss/forms": "^0.2.1",
-    "@tailwindcss/typography": "^0.4.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.8",
     "braille": "^1.1.0",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^7.8.0",
     "lodash": "^4.17.21",
-    "next": "^10.2.2",
-    "next-themes": "^0.0.12",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-intersection-observer": "^8.31.0",
-    "react-responsive": "^8.2.0",
+    "next": "^13.0.6",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-intersection-observer": "^9.4.1",
+    "react-responsive": "^9.0.2",
     "react-rotating-text": "^1.4.1"
   },
   "devDependencies": {
-    "@heroicons/react": "^1.0.1",
-    "@types/node": "^14.14.31",
-    "@types/react": "^17.0.2",
-    "autoprefixer": "^10.2.4",
-    "postcss": "^8.2.15",
-    "prettier": "^2.2.1",
-    "tailwindcss": "^2.2.7",
-    "typescript": "^4.1.5"
+    "@heroicons/react": "^1.0.6",
+    "@types/node": "^18.11.14",
+    "@types/react": "^18.0.26",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4"
   }
 }

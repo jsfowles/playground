@@ -8,7 +8,7 @@ const PageTwo = () => {
       <h1 className="text-4xl">Welcome to Page Two</h1>
 
       <Link passHref href="/transitions">
-        <a>Home</a>
+        Home
       </Link>
     </div>
   );
